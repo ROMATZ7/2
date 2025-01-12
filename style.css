@@ -1,0 +1,150 @@
+/* Pantalla de contraseña */
+#password-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(45deg, #ff6f91, #ffe6e6); /* Rosa oscuro y blanco */
+  color: #000; /* Negro */
+  text-align: center;
+}
+
+#password-screen input {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border: 2px solid #ff6f91; /* Rosa oscuro */
+  border-radius: 5px;
+  outline: none;
+  width: 250px;
+}
+
+#password-screen button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff6f91; /* Rosa oscuro */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+#password-screen button:hover {
+  background-color: #ff3f6c; /* Rosa más oscuro */
+}
+
+.hidden {
+  display: none;
+}
+
+/* Juego */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(45deg, #ff9aa2, #f3e6e8); /* Tonos rosa claro y blanco */
+  color: #000; /* Negro */
+}
+
+#game-container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 400px;
+}
+
+#grid {
+  display: grid;
+  grid-template-rows: repeat(6, 50px);
+  grid-gap: 5px;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(5, 50px);
+  grid-gap: 5px;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ff6f91; /* Rosa oscuro */
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffc1cc; /* Rosa claro */
+  color: #000; /* Negro */
+}
+
+.cell.correct {
+  background-color: #6aaa64; /* Verde */
+  color: white;
+}
+
+.cell.present {
+  background-color: #c9b458; /* Amarillo */
+  color: white;
+}
+
+.cell.absent {
+  background-color: #787c7e; /* Gris */
+  color: white;
+}
+
+input#word-input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid #ff6f91; /* Rosa oscuro */
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+button#submit-word {
+  background-color: #ff6f91; /* Rosa oscuro */
+  color: white;
+  margin-bottom: 10px;
+}
+
+button#submit-word:hover {
+  background-color: #ff3f6c; /* Rosa más oscuro */
+}
+
+button#retry {
+  background-color: #ff6f91; /* Rosa oscuro */
+  color: white;
+}
+
+button#retry:hover {
+  background-color: #ff3f6c; /* Rosa más oscuro */
+}
+
+#message {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #000; /* Negro */
+}

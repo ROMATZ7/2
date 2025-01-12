@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>3. WORDLE</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WORDLE</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Pantalla de contraseña -->
+  <div id="password-screen">
+    <h1>Introduce la contraseña para jugar</h1>
+    <input type="password" id="password" placeholder="Escribe la contraseña">
+    <button onclick="checkPassword()">Entrar</button>
+    <p id="error-message" class="hidden">Contraseña incorrecta. Intenta de nuevo.</p>
+  </div>
+
+  <!-- Contenedor del juego (oculto inicialmente) -->
+  <div id="game-container" class="hidden">
+    <div id="title">WORDLE</div>
+    <div id="grid"></div>
+    <input type="text" id="word-input" maxlength="5" placeholder="Escribe tu palabra aquí">
+    <button id="submit-word">Probar palabra</button>
+    <button id="retry" class="hidden">Reintentar</button>
+    <div id="message"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
